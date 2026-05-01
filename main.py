@@ -16,7 +16,7 @@ from telegram import ReplyKeyboardMarkup, KeyboardButton, Update, InlineKeyboard
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 
 # --- [ᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ] ---
-TOKEN = os.environ.get('BOT_TOKEN', '8798120524:AAED0xPlEvrZtvRQuuHcU2HO823u8hQiBg4')
+TOKEN = os.environ.get('BOT_TOKEN', '8787262370:AAHi_dainHlYIARnqbzQSBRKGEAbIal6a-Y')
 
 ADMIN_IDS = [
     int(os.environ.get('ADMIN_ID_1', '7559289812')),
@@ -34,7 +34,7 @@ ADMIN_DISPLAY_NAME = "💞 **SENUxCHEATS** 💞"
 
 # 🔴 Channel Mandatory Settings
 REQUIRED_CHANNEL = "HTTPS://T.ME/EAGLE_SRC"
-REQUIRED_CHANNEL_ID = -1003711635964
+REQUIRED_CHANNEL_ID = -1003634522050
 
 BASE_DIR = os.path.join(os.getcwd(), "hosted_projects")
 PORT = int(os.environ.get('PORT', 8080))
