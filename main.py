@@ -24,16 +24,16 @@ ADMIN_IDS = [
     int(os.environ.get('ADMIN_ID_3', '0')),
     int(os.environ.get('ADMIN_ID_4', '0')),
     int(os.environ.get('ADMIN_ID_5', '0')),
-    int(os.environ.get('OWNER_ID', '0')),
+    int(os.environ.get('OWNER_ID', '7559289812')),
 ]
 ADMIN_IDS = [aid for aid in ADMIN_IDS if aid != 0]
 
 PRIMARY_ADMIN_ID = ADMIN_IDS[0] if ADMIN_IDS else 7559289812
-ADMIN_USERNAME = "aalyanmods"
-ADMIN_DISPLAY_NAME = "💞 aalyanmods 💞"
+ADMIN_USERNAME = "RED_EAGLE888"
+ADMIN_DISPLAY_NAME = "💞 **SENUxCHEATS** 💞"
 
 # 🔴 Channel Mandatory Settings
-REQUIRED_CHANNEL = "https://t.me/babag101"
+REQUIRED_CHANNEL = "HTTPS://T.ME/EAGLE_SRC"
 REQUIRED_CHANNEL_ID = -1003711635964
 
 BASE_DIR = os.path.join(os.getcwd(), "hosted_projects")
@@ -293,11 +293,11 @@ class Loading:
     @staticmethod
     def restarting():
         return [
-            "🇮🇳 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▱▱▱▱▱▱▱▱▱▱] 0%",
-            "🇮🇳 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▰▰▱▱▱▱▱▱▱▱] 20%",
-            "🇮🇳 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▰▰▰▰▱▱▱▱▱▱] 40%",
-            "🇮🇳 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▰▰▰▰▰▰▱▱▱▱] 60%",
-            "🇮🇳 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▰▰▰▰▰▰▰▰▱▱] 80%",
+            "🇵🇰 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▱▱▱▱▱▱▱▱▱▱] 0%",
+            "🇵🇰 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▰▰▱▱▱▱▱▱▱▱] 20%",
+            "🇵🇰 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▰▰▰▰▱▱▱▱▱▱] 40%",
+            "🇵🇰 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▰▰▰▰▰▰▱▱▱▱] 60%",
+            "🇵🇰 ʀᴇꜱᴛᴀʀᴛɪɴɗ: [▰▰▰▰▰▰▰▰▱▱] 80%",
             "✅ ʀᴇꜱᴛᴀʀᴛᴇᴅ: [▰▰▰▰▰▰▰▰▰▰] 100%"
         ]
     
@@ -508,8 +508,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🌍 **ʟᴀᴍ ᴘʀᴇᴍɪᴜᴍ ʜᴏꜱᴛɪɴɗ ᴠ1** 🌸\n"
         "━━━━━━━━━━━━━━━━━━━━━\n"
         "💙 **ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴇʟɪᴛᴇ ᴘᴀɴᴇʟ**\n"
-        "🔮 **Welcome! This is the most powerful premium server in India.**\n\n"
-        f"🇮🇳 **ᴏᴡɴᴇʀ:** `{ADMIN_USERNAME}`\n"
+        "🔮 **Welcome! This is the most powerful premium server in Pakistan.**\n\n"
+        f"🇵🇰 **ᴏᴡɴᴇʀ:** `{ADMIN_USERNAME}`\n"
         f"📢 **ᴄʜᴀɴɴᴇʟ:** {'Not Set' if not REQUIRED_CHANNEL else REQUIRED_CHANNEL}\n"
         "━━━━━━━━━━━━━━━━━━━━━"
     )
@@ -821,7 +821,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if query.data == "check_join":
         is_member = await check_channel_membership(user_id, context)
         if is_member:
-            await query.edit_message_text("✅ **Verification successful! You can now use the bot.**", parse_mode='Markdown')
+            await query.edit_message_text("✅ **Verification successful! You can now use the bot. please Again /start**", parse_mode='Markdown')
             await start(update, context)
         else:
             await query.answer("❌ You haven't joined the channel yet!", show_alert=True)
